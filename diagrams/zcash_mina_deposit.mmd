@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant UserZ as Zcash Wallet
+  participant ZC as Zcash Testnet
+  participant Watcher as Relayer/Watcher
+  participant Prover as Mock/Toy Prover
+  participant Mina as Mina Testnet (Verifier)
+  participant UI as Frontend
+
+  UserZ->>ZC: create deposit (testnet tx or deposit intent)
+  ZC-->>Watcher: notify/compact-block contains deposit
+  Watcher->>Prover: build witness and produce mock proof
+  Prover-->>Watcher: proof_blob
+  Watcher->>Mina: submit proof_blob (Mina tx or off-chain proof submit)
+  Mina-->>Watcher: txReceipt / verification result
+  Mina->>UI: emit minted wrapped token event
+  UI->>UserZ: show credited balance

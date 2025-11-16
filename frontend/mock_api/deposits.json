@@ -1,0 +1,14 @@
+[
+  {
+    "deposit_id": "dep-1",
+    "txid": "tx-abc123",
+    "amount": 1.0,
+    "status": "observed"
+  },
+  {
+    "deposit_id": "dep-2",
+    "txid": "tx-def456",
+    "amount": 2.5,
+    "status": "submitted"
+  }
+]

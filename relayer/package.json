@@ -1,0 +1,13 @@
+{
+  "name": "zcash-mina-relayer",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "ts-node relayer.ts"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  }
+}

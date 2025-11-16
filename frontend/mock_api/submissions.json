@@ -1,0 +1,12 @@
+[
+  {
+    "deposit_id": "dep-1",
+    "mina_tx": "mina_tx_0xaaa",
+    "status": "accepted"
+  },
+  {
+    "deposit_id": "dep-2",
+    "mina_tx": "mina_tx_0xbbb",
+    "status": "pending"
+  }
+]

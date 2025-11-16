@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zcash ⇄ Mina PoC — Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zcash ⇄ Mina PoC — Demo</h1>
+    <p class="muted">This is a mock demo. Deposits are simulated by the relayer service.</p>
+
+    <div class="card">
+      <h2>Recent Deposits</h2>
+      <ul id="deposits"></ul>
+      <button id="refresh">Refresh</button>
+    </div>
+
+    <div class="card">
+      <h2>Mina Submissions</h2>
+      <ul id="submissions"></ul>
+      <button id="refresh2">Refresh</button>
+    </div>
+
+    <div class="card">
+      <h2>Balances (Mock)</h2>
+      <div id="balances">No balances yet.</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

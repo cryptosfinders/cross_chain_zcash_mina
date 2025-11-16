@@ -1,0 +1,13 @@
+{
+  "name": "circom-demo",
+  "version": "0.1.0",
+  "scripts": {
+    "compile": "circom preimage.circom --r1cs --wasm --sym -o build",
+    "setup": "snarkjs groth16 setup build/preimage.r1cs pot12_final.ptau build/circuit_0000.zkey && snarkjs zkey contribute build/circuit_0000.zkey build/circuit_final.zkey --name=\"demo contribution\" -v",
+    "export-verifier": "snarkjs zkey export verificationkey build/circuit_final.zkey build/verification_key.json",
+    "witness": "node build/preimage_js/generate_witness.js build/preimage_js/preimage.wasm input.json witness.wtns",
+    "prove": "snarkjs groth16 prove build/circuit_final.zkey witness.wtns proof.json public.json",
+    "verify": "snarkjs groth16 verify build/verification_key.json public.json proof.json"
+  },
+  "dependencies": {}
+}
