@@ -1,4 +1,4 @@
-# CrossChain Zcash/Mina
+# Cross-Chain Zcash/Mina
 
 Private Cross-Chain Transfers Using Circom, SnarkJS & Mina Recursive SNARKs.
 
