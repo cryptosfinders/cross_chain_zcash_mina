@@ -135,10 +135,10 @@ cross_chain_zcash_mina/
 ├── mina/
 │   └── mock_verifier.ts       # local demonstration server
 │
-├── frontend_demo/
+├── frontend/
 │   └── index.html             # basic UI for demonstration
 │
-└── demo_runner.sh             # orchestrates entire pipeline
+└── runner.sh             # orchestrates entire pipeline
 ---
 ---
 ### ▶️ Quick Start (Local)

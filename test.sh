@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-echo "Demo runner (mock). Starts mock Mina verifier and mock relayer in background."
+echo "Test runner (mock). Starts mock Mina verifier and mock relayer in background."
 (cd mina && npm install --silent && npm start &) 
 sleep 1
 (cd relayer && npm install --silent && npm start &)
