@@ -114,6 +114,7 @@ Displays deposit events and proof statuses.
 ---
 ## 🏗️ Architecture
 
+---
 cross_chain_zcash_mina/
 │
 ├── relayer/                   # Zcash watcher + proof generator
@@ -138,6 +139,7 @@ cross_chain_zcash_mina/
 │   └── index.html             # basic UI for demonstration
 │
 └── demo_runner.sh             # orchestrates entire pipeline
+---
 
 ---
 ### ▶️ Quick Start (Local)
@@ -240,6 +242,7 @@ Updates:
 ---
 
 ## 🚀 Quick Start (Full ZK Pipeline)
+---
 
 1. Generate the Circom proof
 cd circom
@@ -256,6 +259,7 @@ node scripts/prove_and_submit.js \
 ./demo_runner.sh \
   --fee-payer-key ./fee_payer_key.json \
   --zkapp-address <BRIDGE_ADDR>
+---
 
 ---
 
@@ -336,5 +340,5 @@ MIT
 
 For support, collaboration, or technical questions:
 
-- GitHub: https://github.com/cryptosfinders (@cryptosfinders)
-- Twitter: @cryptos_finders
+- **GitHub**: [@cryptosfinders](https://github.com/cryptosfinders)
+- **Twitter/X**: [@cryptos_finders](https://x.com/cryptos_finders)
